@@ -91,7 +91,6 @@ Yönetici paneli üzerinden şu işlemler kolaylıkla yapılabilir:
 ![Category](https://github.com/user-attachments/assets/585457b2-7e85-405a-b07b-9fb1df7e7ded)
 ![Product](https://github.com/user-attachments/assets/8d04173e-adfb-4b92-9403-5cbc1938f369)
 ![Kupon](https://github.com/user-attachments/assets/1e783598-9180-41ad-9eba-6b02a3666e4d)
-![mail](https://github.com/user-attachments/assets/95b68614-2958-4998-80e8-6e31457ae1a7)
 ![AdminCategory](https://github.com/user-attachments/assets/8d4a6a5c-d069-4842-8df0-a0a596547bc3)
 ![AdminProduct1](https://github.com/user-attachments/assets/c9a22c4a-afbc-4393-9f75-e9a8122e02af)
 ![AdminSlider](https://github.com/user-attachments/assets/1436a9cc-3479-43b1-ae47-f06fe6c8d665)
