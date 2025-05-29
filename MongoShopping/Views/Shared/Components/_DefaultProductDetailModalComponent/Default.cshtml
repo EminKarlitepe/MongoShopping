@@ -1,0 +1,22 @@
+﻿@model ProductModalViewModel
+
+<div class="modal-header">
+    <h5 class="modal-title">@Model.Product.ProductName</h5>
+</div>
+<div class="modal-body">
+    <p>@Model.Product.Description</p>
+
+    @if (Model.Images != null && Model.Images.Any())
+    {
+        <div class="product-images">
+            @foreach (var image in Model.Images)
+            {
+                <img src="@image.ImageUrl" alt="Product Image" style="max-width: 100px;" />
+            }
+        </div>
+    }
+    else
+    {
+        <p>Ürüne ait görsel bulunmamaktadır.</p>
+    }
+</div>

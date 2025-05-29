@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+@Html.Partial("/Views/AdminLayout/PartialHead.cshtml")
+
+<body>
+    <div class="container-scroller">
+
+        @Html.Partial("/Views/AdminLayout/PartialSidebar.cshtml")
+
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                <div class="content-wrapper pb-0">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    @Html.Partial("/Views/AdminLayout/PartialScript.cshtml")
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

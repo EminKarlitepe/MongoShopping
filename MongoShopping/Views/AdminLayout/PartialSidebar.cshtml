@@ -1,0 +1,121 @@
+﻿<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #1e1e2f;
+    }
+
+    .lux-sidebar {
+        width: 260px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(24, 24, 32, 0.8);
+        backdrop-filter: blur(12px);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .lux-brand {
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .lux-nav {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+        .lux-nav li {
+            margin: 10px 0;
+        }
+
+        .lux-nav a {
+            display: flex;
+            align-items: center;
+            color: #eee;
+            text-decoration: none;
+            padding: 12px 20px;
+            transition: background 0.3s ease, color 0.3s ease;
+            border-radius: 12px;
+        }
+
+            .lux-nav a:hover {
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+            }
+
+        .lux-nav i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: #00e6e6;
+            transition: transform 0.3s ease;
+        }
+
+        .lux-nav a:hover i {
+            transform: scale(1.2);
+        }
+
+    .lux-signout {
+        margin-top: auto;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding-top: 20px;
+    }
+
+    .page-body-wrapper {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+        min-height: 100vh;
+        background-color: #f4f4f4;
+    }
+
+    .main-panel {
+        padding: 30px;
+    }
+
+    .content-wrapper {
+        padding-bottom: 30px;
+    }
+</style>
+
+
+<nav class="lux-sidebar" id="sidebar">
+    <div class="lux-brand">
+        <h2>Karlıtepe Yönetim Paneli</h2>
+    </div>
+    <ul class="lux-nav">
+        <li>
+            <a href="/Categories/CategoryList/">
+                <i class="mdi mdi-view-list"></i>
+                <span>Kategoriler</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Product/ProductList/">
+                <i class="mdi mdi-cube-outline"></i>
+                <span>Ürünler</span>
+            </a>
+        </li>
+        <li>
+            <a href="/ProductImages/ProductImagesList/">
+                <i class="mdi mdi-image-multiple"></i>
+                <span>Ürün Resimleri</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Slider/SliderList/">
+                <i class="mdi mdi-image-filter-hdr"></i>
+                <span>Slider</span>
+            </a>
+        </li>
+    </ul>
+</nav>

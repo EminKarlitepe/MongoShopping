@@ -1,0 +1,53 @@
+﻿@model CreateCategoryDto
+
+@{
+    ViewData["Title"] = "CreateCategory";
+    Layout = "~/Views/AdminLayout/index.cshtml";
+}
+
+<h4 class="page-title mb-4">Kategoriler</h4>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Kategori Ekle</h5>
+            </div>
+            <form method="post" class="needs-validation" novalidate>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="CategoryName" class="form-label">Kategori Adı</label>
+                        <input type="text" id="CategoryName" name="CategoryName" class="form-control" asp-for="CategoryName" required>
+                        <div class="invalid-feedback">
+                            Lütfen kategori adı giriniz.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ImageUrl" class="form-label">Resim URL</label>
+                        <input type="text" id="ImageUrl" name="ImageUrl" class="form-control" asp-for="ImageUrl">
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button type="submit" class="btn btn-success px-4">Ekle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+</script>
